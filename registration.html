@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsome Opportunities</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="content">
+            <h1>Pawsome Opportunities Await: Join Our Team</h1>
+            <p>Searching for a way to de-stress while enjoying the company of adorable animals and earning at the same time? Look no further! Pawspace is in search of dependable individuals who can offer pet care services. Register with us today if this aligns with your interests. Waste no time!</p>
+            <button class="cta-btn" onclick="showRegistration()">Join PawSpace</button>
+        </div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="https://th.bing.com/th/id/R.cae62da3d838d410e722df8bc0ae4dea?rik=8C5yqjx8wmwzKA&riu=http%3a%2f%2fwww.reportingday.com%2fwp-content%2fuploads%2f2018%2f07%2fLabrador-Retriever-Dog-HD-Wallpapers.jpg&ehk=ERW%2fI8QUNzJVUKJnznp2hyEzkw6PozCYJGPsy1IiNZM%3d&risl=&pid=ImgRaw&r=0" alt="Cute Dog 1">
+                <span class="paw-icon">🐾</span>
+            </div>
+            <div class="image-item">
+                <img src="https://th.bing.com/th/id/OIP.E1AtgDYV4nl4RzSGclNiIwAAAA?w=474&h=315&rs=1&pid=ImgDetMain" alt="Cute Dog 2">
+                <span class="paw-icon">🐾</span>
+            </div>
+            <div class="image-item">
+                <img src="https://petsforchildren.com/wp-content/uploads/2020/03/eight-ways-to-spend-more-time-with-your-pet-3.jpg" alt="Cute Dog 3">
+                <span class="paw-icon">🐾</span>
+            </div>
+            <div class="image-item">
+                <img src="https://th.bing.com/th/id/R.648df11dd2d0b8589576c2cb3c41baec?rik=q%2fjD%2fny9foZrRg&riu=http%3a%2f%2fweneedfun.com%2fwp-content%2fuploads%2f2016%2f12%2fSiberian-Husky-Puppies-23.jpg&ehk=B1GhpyoPorhovzg4%2bfXJbtXK6dexHJWB8u6b8UcThrY%3d&risl=&pid=ImgRaw&r=0" alt="Cute Dog 4">
+                <span class="paw-icon">🐾</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-form" id="registration-form" style="display: none;">
+        <div class="form-container">
+            <div class="form-image">
+                <img src="https://th.bing.com/th/id/OIP.E1AtgDYV4nl4RzSGclNiIwAAAA?w=474&h=315&rs=1&pid=ImgDetMain" alt="Cute Dog Image">
+            </div>
+            <div class="form-content">
+                <h2>Become a part of our community and increase your earnings</h2>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="text" placeholder="Age">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Pin code">
+                    <select>
+                        <option>Select City</option>
+                        <option>City 1</option>
+                        <option>City 2</option>
+                    </select>
+                    <input type="text" placeholder="Sub Area">
+                    <button type="submit" class="cta-btn">Next</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function showRegistration() {
+    document.getElementById('registration-form').style.display = 'flex';
+    document.querySelector('.hero').style.display = 'none';
+}
+</script>
+</html>

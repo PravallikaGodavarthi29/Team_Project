@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container2 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Company Story, Mission, and Why Choose Us Styling */
+#company-story, #mission2, #why-choose-us {
+    margin: 50px 0;
+}
+
+/* Adding images alongside text */
+.text-and-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.text-and-image .text2 {
+    flex: 1;
+}
+
+.text-and-image .image2 {
+    flex: 1;
+    text-align: center;
+}
+
+.text-and-image .image2 img {
+    max-width:76%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Team Section Styling */
+#team2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    text-align: center;
+}
+
+#team2 h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 22px;
+    margin: 10px 0 5px 0;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Why Choose Us Section */
+#why-choose-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#why-choose-us ul li {
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-left: 5px solid #3498db;
+}
+
+#why-choose-us ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Styling for About Section (Our Story and Our Mission) */
+.about2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.about2 img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.about2 .text-content {
+    flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about2 img {
+        margin-bottom: 20px;
+    }
+
+    .team-member {
+        width:100%;
+}
+}

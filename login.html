@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-page4">
+        <div class="login-box4">
+            <h1>Pet Care</h1>
+            <p>Your Trusted Pet Care Service</p>
+            <form id="loginForm4">
+                <div class="input-group4">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-group4">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="input-group4">
+                    <input type="tel" id="mobile" placeholder="Mobile" required>
+                </div>
+                <div class="buttons4">
+                    <button class="login-btn" type="submit">Login</button>
+                    <button class="reset-btn" type="button">Reset</button>
+                </div>
+            </form>
+            <a href="#" class="forgot-password4">Forgot Password?</a>
+            <div id="message" class="message4"></div> <!-- Success message container -->
+        </div>
+    </div>
+    <script>
+        document.querySelector('#loginForm4').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const mobile = document.getElementById('mobile').value;
+    
+            if (email === '' || password === '' || mobile === '') {
+                alert('Please fill in all fields: email, password, and mobile number.');
+            } else {
+                // Display success message
+                const messageContainer = document.querySelector('.message4');
+                messageContainer.textContent = 'You have successfully logged in.';
+                messageContainer.style.color = 'green'; // Optional: Change the color of the message
+    
+                // Redirect to the home page after 2 seconds
+                setTimeout(function() {
+                    window.location.href = 'home.html'; // Change 'home.html' to your actual home page file
+                }, 2000);
+            }
+        });
+    
+        // Reset button functionality
+        document.querySelector('.reset-btn').addEventListener('click', function() {
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+            document.getElementById('mobile').value = '';
+            document.querySelector('.message4').textContent = ''; // Clear any existing message
+        });
+    </script>
+    
+</body>
+</html>
